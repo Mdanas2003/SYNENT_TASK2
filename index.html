@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luminary — Journal Your Inner Light</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───────────────── NAV ───────────────── -->
+  <header class="nav">
+    <a href="#" class="nav__logo">Luminary</a>
+    <nav class="nav__links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#" class="nav__cta">Start free</a>
+    </nav>
+    <button class="nav__hamburger" aria-label="Open menu">&#9776;</button>
+  </header>
+
+  <!-- ───────────────── HERO ───────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__orb-wrap" aria-hidden="true">
+      <div class="hero__orb"></div>
+      <div class="hero__orb hero__orb--ring1"></div>
+      <div class="hero__orb hero__orb--ring2"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">AI-Powered Journaling</p>
+      <h1 class="hero__headline">
+        Write to yourself.<br />
+        <em>Understand yourself.</em>
+      </h1>
+      <p class="hero__sub">
+        Luminary turns your daily entries into living insight —
+        surfacing patterns, moods, and moments you'd otherwise miss.
+      </p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--primary">Start journaling free</a>
+        <a href="#features" class="btn btn--ghost">See how it works</a>
+      </div>
+      <p class="hero__trust">No credit card required &nbsp;·&nbsp; 14-day free trial</p>
+    </div>
+
+    <div class="hero__preview" aria-hidden="true">
+      <div class="journal-card">
+        <div class="journal-card__date">Wednesday, June 10</div>
+        <div class="journal-card__text">
+          "Today felt heavy, but I got through it. The morning walk helped…"
+        </div>
+        <div class="journal-card__insight">
+          <span class="insight-dot"></span>
+          <span>Luminary detected a <strong>resilience pattern</strong> across 12 entries.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── FEATURES ───────────────── -->
+  <section class="features" id="features">
+    <div class="features__header">
+      <p class="section-eyebrow">What Luminary does</p>
+      <h2 class="section-title">Your journal, made smarter</h2>
+    </div>
+
+    <div class="features__grid">
+
+      <article class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+            <path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="feature-card__title">Daily Mood Pulse</h3>
+        <p class="feature-card__desc">
+          Luminary reads emotional tone across your entries, building a mood timeline
+          that shows you exactly how your days and weeks actually feel — not how you thought they felt.
+        </p>
+      </article>
+
+      <article class="feature-card feature-card--accent">
+        <div class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 38L20 22l8 10 6-8 6 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="feature-card__title">Pattern Intelligence</h3>
+        <p class="feature-card__desc">
+          After just a week, Luminary begins surfacing recurring themes — stress triggers,
+          creative surges, relationship patterns — before you'd notice them yourself.
+        </p>
+        <span class="feature-card__badge">Most loved</span>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M17 24h14M17 31h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="feature-card__title">Smart Prompts</h3>
+        <p class="feature-card__desc">
+          When you're blank, Luminary offers a prompt calibrated to your recent entries —
+          so the question it asks is always the one worth answering right now.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8C15.2 8 8 15.2 8 24s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8z" stroke="currentColor" stroke-width="2"/>
+            <path d="M24 16v8l5 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="36" cy="12" r="5" fill="var(--teal)" stroke="none"/>
+          </svg>
+        </div>
+        <h3 class="feature-card__title">Private by Design</h3>
+        <p class="feature-card__desc">
+          Your entries are end-to-end encrypted. Luminary's AI runs locally on device —
+          nothing leaves your phone without your explicit permission.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ───────────────── HOW IT WORKS ───────────────── -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="hiw__inner">
+      <div class="hiw__text">
+        <p class="section-eyebrow">Getting started</p>
+        <h2 class="section-title">From first word to full insight</h2>
+        <ul class="hiw__steps">
+          <li class="hiw__step">
+            <span class="hiw__step-label">Write</span>
+            <p>Open the app and write whatever's on your mind — a sentence, a stream, a list.</p>
+          </li>
+          <li class="hiw__step">
+            <span class="hiw__step-label">Reflect</span>
+            <p>Luminary highlights key moments and asks one follow-up question to deepen the entry.</p>
+          </li>
+          <li class="hiw__step">
+            <span class="hiw__step-label">Discover</span>
+            <p>Your weekly digest shows patterns, growth edges, and the emotional shape of your week.</p>
+          </li>
+        </ul>
+        <a href="#" class="btn btn--primary">Try it now — it's free</a>
+      </div>
+      <div class="hiw__visual" aria-hidden="true">
+        <div class="week-chart">
+          <div class="week-chart__title">Your week in mood</div>
+          <div class="week-chart__bars">
+            <div class="bar-wrap"><div class="bar" style="--h:55%"></div><span>M</span></div>
+            <div class="bar-wrap"><div class="bar" style="--h:70%"></div><span>T</span></div>
+            <div class="bar-wrap"><div class="bar" style="--h:45%"></div><span>W</span></div>
+            <div class="bar-wrap"><div class="bar bar--highlight" style="--h:88%"></div><span>T</span></div>
+            <div class="bar-wrap"><div class="bar" style="--h:62%"></div><span>F</span></div>
+            <div class="bar-wrap"><div class="bar" style="--h:75%"></div><span>S</span></div>
+            <div class="bar-wrap"><div class="bar bar--highlight" style="--h:92%"></div><span>S</span></div>
+          </div>
+          <div class="week-chart__note">↑ Your two best days followed creative writing sessions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── FOOTER ───────────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Luminary</span>
+        <p class="footer__tagline">Write to yourself. Understand yourself.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Luminary Inc. All rights reserved.</p>
+      <p>Built with care for curious minds.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
